@@ -1,0 +1,7 @@
+model_path: models/hand_landmarker.task
+csv_path: datasets/bukva/annotations.csv
+videos_dir: datasets/bukva/trimmed/
+output_dir: datasets/bukva_processed/processed_landmarks_3d
+target_frame_count: 24
+target_vector_size: 63
+dimension: xyz
