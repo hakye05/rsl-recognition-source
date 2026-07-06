@@ -28,7 +28,7 @@ for i, row in df.iterrows():
     video_path = row["file_path"]
     attachment_id = row["attachment_id"]
     print(f"[{i+1}/{len(df)}] Processing {attachment_id}")
-    data = process_video(video_path, hand_detector, normalizer, target_vector_size)
+    data = process_video(video_path, hand_detector, normalizer, target_vector_size, target_frame_count)
 
     if data is None:
         continue
